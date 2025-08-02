@@ -1,0 +1,21 @@
+{
+  "name": "citrus-copper-theme",
+  "displayName": "Citrus Copper",
+  "description": "A neutral theme with touches of orange",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.102.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Citrus Copper Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Citrus Copper Theme-color-theme.json"
+      }
+    ]
+  }
+}
