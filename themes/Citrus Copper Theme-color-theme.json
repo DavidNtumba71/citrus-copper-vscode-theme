@@ -1,9 +1,9 @@
 		{
-			"name": "Citrus Copper Theme",
+			"name": "Citrus Copper Theme", //find another anme
 			"colors": {
 				"editor.background": "#313841",
 				"editor.foreground": "#EEEEEE",
-				"editorLineNumber.foreground": "#3A4750",
+				"editorLineNumber.foreground": "#52616a",
 				"editorLineNumber.activeForeground": "#3A4750",
 				"activityBar.background": "#313841",
 				"activityBarBadge.background": "#EA9216",
@@ -39,7 +39,7 @@
 					],
 					"settings": {
 						"fontStyle": "italic",
-						"foreground": "#47622B"
+						"foreground": "#52616a"
 					}
 				},
 				{
@@ -50,7 +50,7 @@
 					],
 					"settings": {
 						"fontStyle": "italic",
-						"foreground": "#47622B",
+						"foreground": "#52616a",
 					}
 				},
 				{
@@ -88,9 +88,9 @@
 						"keyword",
 						"storage.type",
 						"storage.modifier"
-					],
+					],	
 					"settings": {
-						"foreground": "#C8CDB2"
+						"foreground": "#DA2C43"
 					}
 				},
 				{
@@ -119,7 +119,7 @@
 						"keyword.control",
 					],
 					"settings": {
-						"foreground": "#944743"
+						"foreground": "#E89528"
 					}
 				},
 				{
@@ -223,7 +223,7 @@
 						"support.type.sys-types"
 					],
 					"settings": {
-						"foreground": "#E89528"
+						"foreground": "#C8C0B2"
 					}
 				},
 				{
