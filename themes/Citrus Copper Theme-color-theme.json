@@ -1,7 +1,7 @@
 		{
 			"name": "Citrus Copper Theme", //find another anme
 			"colors": {
-				"editor.background": "#313841",
+				"editor.background": "#313841", //"#1e2228"
 				"editor.foreground": "#EEEEEE",
 				"editorLineNumber.foreground": "#52616a",
 				"editorLineNumber.activeForeground": "#3A4750",
@@ -88,7 +88,7 @@
 						"keyword",
 						"storage.type",
 						"storage.modifier"
-					],	
+					],
 					"settings": {
 						"foreground": "#DA2C43"
 					}
@@ -680,6 +680,15 @@
 					],
 					"settings": {
 						"foreground": "#EEFFFF"
+					}
+				},
+				{
+					"name": "Variable",
+					"scope": [
+						"entity.name.variable",
+					],
+					"settings": {
+						"foreground": "#EEEEEE"
 					}
 				}
 			]
