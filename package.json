@@ -14,12 +14,17 @@
 			{
 				"label": "Citrus Copper",
 				"uiTheme": "vs-dark",
-				"path": "./themes/Citrus Copper Theme-color-theme.json"
+				"path": "./themes/citrus-copper.color-theme.json"
 			},
 			{
 				"label": "Citrus Copper - Citric",
 				"uiTheme": "vs-dark",
-				"path": "./themes/Citrus Copper-Citric-color-theme.json"
+				"path": "./themes/citrus-copper-citric.color-theme.json"
+			},
+			{
+				"label": "Citrus Copper - Oxidized",
+				"uiTheme": "vs-dark",
+				"path": "./themes/citrus-copper-oxidized.color-theme.json"
 			}
 		]
 	}
