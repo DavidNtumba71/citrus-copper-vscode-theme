@@ -22,6 +22,163 @@
 		"scrollbarSlider.activeBackground": "#7A7D7D"
 	},
 	"tokenColors": [
+		// #region YAML
+		{
+			"name": "YAML Tag",
+			"scope": [
+				"entity.name.tag.yaml"
+			],
+			"settings": {
+				"foreground": "#EA9216"
+			}
+		},
+		// #endregion
+		// #region Python
+		{
+			"name": "Python 'self' keyword",
+			"scope": [
+				"variable.language.special.self.python"
+			],
+			"settings": {
+				"foreground": "#4DB6AC"
+			}
+		},
+		{
+			"name": "Python Numeric Values",
+			"scope": [
+				"constant.numeric.python",
+				"constant.numeric.dec.python",
+				"meta.function-call.arguments.python"
+			],
+			"settings": {
+				"foreground": "#4DB6AC"
+			}
+		},
+		{
+			"name": "Python 'magic' method",
+			"scope": [
+				"support.function.magic.python",
+				"meta.function-call.generic.python"
+			],
+			"settings": {
+				"foreground": "#EA9216"
+			}
+		},
+		{
+			"name": "Python single quote",
+			"scope": [
+				"punctuation.definition.string.begin.python",
+				"punctuation.definition.string.end.python"
+			],
+			"settings": {
+				"foreground": "#74A83C"
+			}
+		},
+		// #endregion
+		{
+			"name": "PHP Variable Sigil ($)",
+			"scope": [
+				"punctuation.definition.variable.php"
+			],
+			"settings": {
+				"foreground": "#EA9216"
+			}
+		},
+		{
+			"name": "PHP single quote",
+			"scope": [
+				"punctuation.definition.string.begin.php",
+				"punctuation.definition.string.end.php"
+			],
+			"settings": {
+				"foreground": "#74A83C"
+			}
+		},
+		// #region PHP
+		{
+			"name": "PHP 'this' keyword",
+			"scope": [
+				"variable.language.this.php"
+			],
+			"settings": {
+				"foreground": "#4DB6AC"
+			}
+		},
+		// #endregion
+		// #region JavaScript
+		{
+			"name": "JavaScript 'this' keyword",
+			"scope": [
+				"variable.language.this.js",
+				"variable.language.this.jsx"
+			],
+			"settings": {
+				"foreground": "#4DB6AC"
+			}
+		},
+		// #endregion
+		// #region Java
+		{
+			"name": "Java 'this' keyword",
+			"scope": [
+				"variable.language.this.java"
+			],
+			"settings": {
+				"foreground": "#4DB6AC"
+			}
+		},
+		// #endregion
+		// #region Elixir
+		{
+			"name": "Elixir - Keyword, Storage",
+			"scope": [
+				"keyword.elixir",
+				"storage.type.elixir",
+				"storage.modifier.elixir"
+			],
+			"settings": {
+				"foreground": "#d21503"
+			}
+		},
+		{
+			"name": "Elixir - Variables",
+			"scope": [
+				"variable.elixir",
+				"string constant.other.placeholder.elixir"
+			],
+			"settings": {
+				"foreground": "#EEEEEE"
+			}
+		},
+		{
+			"name": "Elixir - Function, Special Method",
+			"scope": [
+				"entity.name.function.elixir",
+				"meta.function-call.elixir",
+				"variable.function.elixir",
+				"support.function.elixir",
+				"keyword.other.special-method.elixir"
+			],
+			"settings": {
+				"foreground": "#E89528"
+			}
+		},
+		{
+			"name": "Elixir - Brackets",
+			"scope": [
+				"punctuation.section.braces.elixir",
+				"punctuation.section.brackets.elixir",
+				"punctuation.section.parens.elixir",
+				"meta.brace.elixir",
+				"meta.bracket.elixir",
+				"meta.paren.elixir"
+			],
+			"settings": {
+				"foreground": "#EEEEEE"
+			}
+		},
+		// #endregion
+		// #region General
 		{
 			"name": "All Text",
 			"scope": [
@@ -50,7 +207,7 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#52616a",
+				"foreground": "#52616a"
 			}
 		},
 		{
@@ -90,7 +247,7 @@
 				"storage.modifier"
 			],
 			"settings": {
-				"foreground": "#DA2C43"
+				"foreground": "#d21503"
 			}
 		},
 		{
@@ -116,10 +273,10 @@
 		{
 			"name": "Operator, Misc",
 			"scope": [
-				"keyword.control",
+				"keyword.control"
 			],
 			"settings": {
-				"foreground": "#B87333"
+				"foreground": "#E89528"
 			}
 		},
 		{
@@ -136,65 +293,33 @@
 				"foreground": "#EEEEEE"
 			}
 		},
+		// #endregion
+		// #region Dart
 		{
-			"name": "Tag",
+			"name": "Dart 'this' keyword",
 			"scope": [
-				"entity.name.tag",
-				"meta.tag.sgml",
-				"markup.deleted.git_gutter"
+				"variable.language.dart",
+				"source.dart.this"
 			],
 			"settings": {
 				"foreground": "#4DB6AC"
 			}
 		},
+		// #endregion
+		// #region TypeScript
 		{
-			"name": "Function, Special Method",
+			"name": "TypeScript 'this' keyword",
 			"scope": [
-				"entity.name.function",
-				"meta.function-call",
-				"variable.function",
-				"support.function",
-				"keyword.other.special-method"
-			],
-			"settings": {
-				"foreground": "#B87333"
-			}
-		},
-		{
-			"name": "Block Level Variables",
-			"scope": [
-				"meta.block variable.other"
+				"variable.language.this.ts",
+				"variable.language.this.tsx",
+				"meta.method.declaration.ts",
+				"meta.class.ts"
 			],
 			"settings": {
 				"foreground": "#4DB6AC"
 			}
 		},
-		{
-			"name": "Other Variable, String Link",
-			"scope": [
-				"support.other.variable",
-				"string.other.link"
-			],
-			"settings": {
-				"foreground": "#F78C6C"
-			}
-		},
-		{
-			"name": "Number, Constant, Function Argument, Tag Attribute, Embedded",
-			"scope": [
-				"constant.numeric",
-				"constant.language",
-				"support.constant",
-				"constant.character",
-				"constant.escape",
-				"variable.parameter",
-				"keyword.other.unit",
-				"keyword.other"
-			],
-			"settings": {
-				"foreground": "#23d6d6b7"
-			}
-		},
+		// #endregion
 		{
 			"name": "String, Symbols, Inherited Class, Markup Heading",
 			"scope": [
@@ -213,6 +338,7 @@
 		{
 			"name": "Class, Support",
 			"scope": [
+				"entity.name",
 				"support.type",
 				"support.class",
 				"support.other.namespace.use.php",
@@ -223,15 +349,6 @@
 			],
 			"settings": {
 				"foreground": "#C8C0B2"
-			}
-		},
-		{
-			"name": "Other",
-			"scope": [
-				"entity.name"
-			],
-			"settings": {
-				"foreground": "#7A7D7D"
 			}
 		},
 		{
@@ -697,6 +814,26 @@
 			],
 			"settings": {
 				"foreground": "#EEEEEE"
+			}
+		},
+		{
+			"name": "Dart 'this' keyword",
+			"scope": [
+				"variable.language.dart",
+				"source.dart.this",
+			],
+			"settings": {
+				"foreground": "#d21503"
+			}
+		},
+		{
+			"name": "TypeScript 'this' keyword",
+			"scope": [
+				"variable.language.this.ts",
+				"variable.language.this.tsx"
+			],
+			"settings": {
+				"foreground": "#d21503"
 			}
 		}
 	]
