@@ -6,13 +6,13 @@
 		"editorLineNumber.foreground": "#52616a",
 		"editorLineNumber.activeForeground": "#3A4750",
 		"activityBar.background": "#1e2228",
-		"activityBarBadge.background": "#EA9216",
+		"activityBarBadge.background": "#E1AC98",
 		"sideBar.background": "#1e2228",
 		"sideBarTitle.foreground": "#C8C0B2",
 		"statusBar.background": "#1e2228",
 		"statusBar.foreground": "#C8C0B2",
 		"statusBar.noFolderBackground": "#4DB6AC",
-		"statusBar.debuggingBackground": "#EA9216",
+		"statusBar.debuggingBackground": "#E1AC98",
 		"titleBar.activeBackground": "#1e2228",
 		"titleBar.inactiveBackground": "#1e2228",
 		"titleBar.activeForeground": "#C8C0B2",
@@ -29,7 +29,7 @@
 				"entity.name.tag.yaml"
 			],
 			"settings": {
-				"foreground": "#EA9216"
+				"foreground": "#E1AC98"
 			}
 		},
 		// #endregion
@@ -61,7 +61,7 @@
 				"meta.function-call.generic.python"
 			],
 			"settings": {
-				"foreground": "#F2B86D"
+				"foreground": "#E1AC98"
 			}
 		},
 		{
@@ -81,7 +81,7 @@
 				"punctuation.definition.variable.php"
 			],
 			"settings": {
-				"foreground": "#EA9216"
+				"foreground": "#E1AC98"
 			}
 		},
 		{
@@ -137,7 +137,7 @@
 				"storage.modifier.elixir"
 			],
 			"settings": {
-				"foreground": "#EA9216"
+				"foreground": "#E1AC98"
 			}
 		},
 		{
@@ -160,7 +160,7 @@
 				"keyword.other.special-method.elixir"
 			],
 			"settings": {
-				"foreground": "#EA9216"
+				"foreground": "#E1AC98"
 			}
 		},
 		{
@@ -178,34 +178,29 @@
 			}
 		},
 		// #endregion
-		// #regoin CSharp
+		// #region CSharp
 		{
-			"name": "C# 'this' keyword",
-			"scope": [
-				"variable.language.this.cs"
-			],
-			"settings": {
-				"foreground": "#4DB6AC"
-			}
-		},
-		{
-			"name": "C# scope access modifier public",
-			"scope": [
-				"storage.modifier.public.cs",
-				"source.cs"
-			],
-			"settings": {
-				"foreground": "#B67B78"
-			}
-		},
-		{
-			"name": "C# scope access modifier private",
+			"name": "C# scope keys",
 			"scope": [
 				"storage.modifier.private.cs",
+				"storage.modifier.public.cs",
+				"variable.language.this.cs",
+				"storage.modifier.static.cs",
+				"storage.modifier.protected.cs",
+				"storage.modifier.internal.cs",
+				"storage.modifier.readonly.cs",
+				"storage.modifier.async.cs",
+				"storage.modifier.override.cs",
+				"storage.modifier.virtual.cs",
+				"storage.modifier.sealed.cs",
+				"storage.modifier.const.cs",
+				"storage.modifier.event.cs",
+				"storage.modifier.ref.cs",
+				"storage.type.var.cs",
 				"source.cs"
 			],
 			"settings": {
-				"foreground": "#B67B78"
+				"foreground": "#98D1B1"
 			}
 		},
 		{
@@ -215,7 +210,67 @@
 				"source.cs"
 			],
 			"settings": {
-				"foreground": "#4DB6AC"
+				"foreground": "#B37A6D"
+			}
+		},
+		{
+			"name": "C# class",
+			"scope": [
+				"entity.name.type.class.cs",
+				"source.cs"
+			],
+			"settings": {
+				"foreground": "#fb8c8c"
+			}
+		},
+		{
+			"name": "C# types",
+			"scope": [
+				"entity.name.type.cs",
+				"source.cs"
+			],
+			"settings": {
+				"foreground": "#fb8c8cc6"
+			}
+		},
+		{
+			"name": "C# Other class",
+			"scope": [
+				"variable.other.object.property.cs",
+				"source.cs"
+			],
+			"settings": {
+				"foreground": "#E1AC98"
+			}
+		},
+		{
+			"name": "C# constant decimal",
+			"scope": [
+				"constant.numeric.decimal.cs",
+				"source.cs"
+			],
+			"settings": {
+				"foreground": "#EEEEEE"
+			}
+		},
+		{
+			"name": "C# namespace",
+			"scope": [
+				"entity.name.type.namespace.cs",
+				"source.cs"
+			],
+			"settings": {
+				"foreground": "#E4E9AD"
+			}
+		},
+		{
+			"name": "C# local variable",
+			"scope": [
+				"entity.name.variable.local.cs",
+				"source.cs"
+			],
+			"settings": {
+				"foreground": "#A1C6C7"
 			}
 		},
 		// #endregion
@@ -288,7 +343,7 @@
 				"storage.modifier"
 			],
 			"settings": {
-				"foreground": "#EA9216"
+				"foreground": "#E1AC98"
 			}
 		},
 		{
@@ -317,7 +372,7 @@
 				"keyword.control"
 			],
 			"settings": {
-				"foreground": "#EA9216"
+				"foreground": "#E1AC98"
 			}
 		},
 		{
@@ -423,7 +478,7 @@
 				"variable.other.class.js"
 			],
 			"settings": {
-				"foreground": "#EA9216"
+				"foreground": "#E1AC98"
 			}
 		},
 		{
@@ -443,7 +498,7 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#EA9216"
+				"foreground": "#E1AC98"
 			}
 		},
 		{
@@ -453,7 +508,7 @@
 				"variable.function.constructor"
 			],
 			"settings": {
-				"foreground": "#EA9216"
+				"foreground": "#E1AC98"
 			}
 		},
 		{
@@ -509,7 +564,7 @@
 				"markup.deleted"
 			],
 			"settings": {
-				"foreground": "#EA9216"
+				"foreground": "#E1AC98"
 			}
 		},
 		{
@@ -568,7 +623,7 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#EA9216"
+				"foreground": "#E1AC98"
 			}
 		},
 		{
@@ -604,7 +659,7 @@
 				"source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
 			],
 			"settings": {
-				"foreground": "#EA9216"
+				"foreground": "#E1AC98"
 			}
 		},
 		{
@@ -864,7 +919,7 @@
 				"source.dart.this",
 			],
 			"settings": {
-				"foreground": "#EA9216"
+				"foreground": "#E1AC98"
 			}
 		},
 		{
@@ -874,7 +929,7 @@
 				"variable.language.this.tsx"
 			],
 			"settings": {
-				"foreground": "#EA9216"
+				"foreground": "#E1AC98"
 			}
 		}
 	]
