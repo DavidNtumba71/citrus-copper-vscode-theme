@@ -2,21 +2,21 @@
 	"name": "Citrus Copper Citric", //find another anme
 	"colors": {
 		"editor.background": "#1e2228",
-		"editor.foreground": "#EEEEEE",
+		"editor.foreground": "#C8C0B2",
 		"editorLineNumber.foreground": "#52616a",
 		"editorLineNumber.activeForeground": "#3A4750",
 		"activityBar.background": "#1e2228",
 		"activityBarBadge.background": "#EA9216",
 		"sideBar.background": "#1e2228",
-		"sideBarTitle.foreground": "#EEEEEE",
+		"sideBarTitle.foreground": "#C8C0B2",
 		"statusBar.background": "#1e2228",
-		"statusBar.foreground": "#EEEEEE",
+		"statusBar.foreground": "#C8C0B2",
 		"statusBar.noFolderBackground": "#4DB6AC",
 		"statusBar.debuggingBackground": "#EA9216",
 		"titleBar.activeBackground": "#1e2228",
 		"titleBar.inactiveBackground": "#1e2228",
-		"titleBar.activeForeground": "#EEEEEE",
-		"titleBar.inactiveForeground": "#EEEEEE",
+		"titleBar.activeForeground": "#C8C0B2",
+		"titleBar.inactiveForeground": "#C8C0B2",
 		"scrollbarSlider.background": "#7A7D7D",
 		"scrollbarSlider.hoverBackground": "#7A7D7D",
 		"scrollbarSlider.activeBackground": "#7A7D7D"
@@ -61,7 +61,7 @@
 				"meta.function-call.generic.python"
 			],
 			"settings": {
-				"foreground": "#EA9216"
+				"foreground": "#F2B86D"
 			}
 		},
 		{
@@ -71,7 +71,7 @@
 				"punctuation.definition.string.end.python"
 			],
 			"settings": {
-				"foreground": "#74A83C"
+				"foreground": "#A3BE8C"
 			}
 		},
 		// #endregion
@@ -91,7 +91,7 @@
 				"punctuation.definition.string.end.php"
 			],
 			"settings": {
-				"foreground": "#74A83C"
+				"foreground": "#A3BE8C"
 			}
 		},
 		// #region PHP
@@ -137,7 +137,7 @@
 				"storage.modifier.elixir"
 			],
 			"settings": {
-				"foreground": "#d21503"
+				"foreground": "#EA9216"
 			}
 		},
 		{
@@ -147,7 +147,7 @@
 				"string constant.other.placeholder.elixir"
 			],
 			"settings": {
-				"foreground": "#EEEEEE"
+				"foreground": "#C8C0B2"
 			}
 		},
 		{
@@ -160,7 +160,7 @@
 				"keyword.other.special-method.elixir"
 			],
 			"settings": {
-				"foreground": "#E89528"
+				"foreground": "#EA9216"
 			}
 		},
 		{
@@ -174,7 +174,48 @@
 				"meta.paren.elixir"
 			],
 			"settings": {
-				"foreground": "#EEEEEE"
+				"foreground": "#C8C0B2"
+			}
+		},
+		// #endregion
+		// #regoin CSharp
+		{
+			"name": "C# 'this' keyword",
+			"scope": [
+				"variable.language.this.cs"
+			],
+			"settings": {
+				"foreground": "#4DB6AC"
+			}
+		},
+		{
+			"name": "C# scope access modifier public",
+			"scope": [
+				"storage.modifier.public.cs",
+				"source.cs"
+			],
+			"settings": {
+				"foreground": "#B67B78"
+			}
+		},
+		{
+			"name": "C# scope access modifier private",
+			"scope": [
+				"storage.modifier.private.cs",
+				"source.cs"
+			],
+			"settings": {
+				"foreground": "#B67B78"
+			}
+		},
+		{
+			"name": "C# function",
+			"scope": [
+				"entity.name.function.cs",
+				"source.cs"
+			],
+			"settings": {
+				"foreground": "#4DB6AC"
 			}
 		},
 		// #endregion
@@ -185,7 +226,7 @@
 				"*"
 			],
 			"settings": {
-				"foreground": "#EEEEEE"
+				"foreground": "#C8C0B2"
 			}
 		},
 		{
@@ -217,7 +258,7 @@
 				"string constant.other.placeholder"
 			],
 			"settings": {
-				"foreground": "#EEEEEE"
+				"foreground": "#C8C0B2"
 			}
 		},
 		{
@@ -226,7 +267,7 @@
 				"constant.other.color"
 			],
 			"settings": {
-				"foreground": "#EEEEEE"
+				"foreground": "#C8C0B2"
 			}
 		},
 		{
@@ -236,7 +277,7 @@
 				"invalid.illegal"
 			],
 			"settings": {
-				"foreground": "#EEEEEE"
+				"foreground": "#C8C0B2"
 			}
 		},
 		{
@@ -247,7 +288,7 @@
 				"storage.modifier"
 			],
 			"settings": {
-				"foreground": "#d21503"
+				"foreground": "#EA9216"
 			}
 		},
 		{
@@ -267,7 +308,7 @@
 				"keyword.other.substitution"
 			],
 			"settings": {
-				"foreground": "#EEEEEE"
+				"foreground": "#C8C0B2"
 			}
 		},
 		{
@@ -276,7 +317,7 @@
 				"keyword.control"
 			],
 			"settings": {
-				"foreground": "#E89528"
+				"foreground": "#EA9216"
 			}
 		},
 		{
@@ -290,7 +331,7 @@
 				"meta.paren"
 			],
 			"settings": {
-				"foreground": "#EEEEEE"
+				"foreground": "#C8C0B2"
 			}
 		},
 		// #endregion
@@ -332,7 +373,7 @@
 				"meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
 			],
 			"settings": {
-				"foreground": "#74a83c"
+				"foreground": "#A3BE8C"
 			}
 		},
 		{
@@ -382,7 +423,7 @@
 				"variable.other.class.js"
 			],
 			"settings": {
-				"foreground": "#FF5370"
+				"foreground": "#EA9216"
 			}
 		},
 		{
@@ -392,7 +433,7 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#EEEEEE"
+				"foreground": "#C8C0B2"
 			}
 		},
 		{
@@ -402,7 +443,7 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#82AAFF"
+				"foreground": "#EA9216"
 			}
 		},
 		{
@@ -412,7 +453,7 @@
 				"variable.function.constructor"
 			],
 			"settings": {
-				"foreground": "#82AAFF"
+				"foreground": "#EA9216"
 			}
 		},
 		{
@@ -468,7 +509,7 @@
 				"markup.deleted"
 			],
 			"settings": {
-				"foreground": "#FF5370"
+				"foreground": "#EA9216"
 			}
 		},
 		{
@@ -527,7 +568,7 @@
 			],
 			"settings": {
 				"fontStyle": "italic",
-				"foreground": "#FF5370"
+				"foreground": "#EA9216"
 			}
 		},
 		{
@@ -563,7 +604,7 @@
 				"source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json"
 			],
 			"settings": {
-				"foreground": "#FF5370"
+				"foreground": "#EA9216"
 			}
 		},
 		{
@@ -813,7 +854,7 @@
 				"entity.name.variable",
 			],
 			"settings": {
-				"foreground": "#EEEEEE"
+				"foreground": "#C8C0B2"
 			}
 		},
 		{
@@ -823,7 +864,7 @@
 				"source.dart.this",
 			],
 			"settings": {
-				"foreground": "#d21503"
+				"foreground": "#EA9216"
 			}
 		},
 		{
@@ -833,7 +874,7 @@
 				"variable.language.this.tsx"
 			],
 			"settings": {
-				"foreground": "#d21503"
+				"foreground": "#EA9216"
 			}
 		}
 	]
