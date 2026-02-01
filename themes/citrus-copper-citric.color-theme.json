@@ -210,27 +210,18 @@
 				"source.cs"
 			],
 			"settings": {
-				"foreground": "#B37A6D"
+				"foreground": "#E1AC98"
 			}
 		},
 		{
-			"name": "C# class",
+			"name": "C# class, types",
 			"scope": [
+				"entity.name.type.cs",
 				"entity.name.type.class.cs",
 				"source.cs"
 			],
 			"settings": {
 				"foreground": "#fb8c8c"
-			}
-		},
-		{
-			"name": "C# types",
-			"scope": [
-				"entity.name.type.cs",
-				"source.cs"
-			],
-			"settings": {
-				"foreground": "#fb8c8cc6"
 			}
 		},
 		{
@@ -240,7 +231,7 @@
 				"source.cs"
 			],
 			"settings": {
-				"foreground": "#E1AC98"
+				"foreground": "#A1C6C7"
 			}
 		},
 		{
@@ -271,6 +262,17 @@
 			],
 			"settings": {
 				"foreground": "#A1C6C7"
+			}
+		},
+		{
+			"name": "C# Control Flow Keywords",
+			"scope": [
+				"keyword.control.conditional.if.cs",
+				"keyword.control.flow.return.cs",
+				"source.cs"
+			],
+			"settings": {
+				"foreground": "#E4E9AD"
 			}
 		},
 		// #endregion
@@ -343,7 +345,7 @@
 				"storage.modifier"
 			],
 			"settings": {
-				"foreground": "#E1AC98"
+				"foreground": "#9181A1"
 			}
 		},
 		{
@@ -363,7 +365,7 @@
 				"keyword.other.substitution"
 			],
 			"settings": {
-				"foreground": "#C8C0B2"
+				"foreground": "#E1AC98"
 			}
 		},
 		{
