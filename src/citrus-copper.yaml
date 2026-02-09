@@ -1,0 +1,110 @@
+# Citrus Copper Theme Config
+# Source-of-truth for all theme colors and tokens
+$schema: ""
+name: Citrus Copper
+author: David Ntumba
+
+
+baseColors: &baseColors
+  editor.background: "#1e2228"
+  editor.foreground: "#C8C0B2"
+  editorLineNumber.foreground: "#52616a"
+  editorLineNumber.activeForeground: "#3A4750"
+  activityBar.background: "#1e2228"
+  activityBarBadge.background: "#E1AC98"
+  sideBar.background: "#1e2228"
+  sideBarTitle.foreground: "#C8C0B2"
+  statusBar.background: "#1e2228"
+  statusBar.foreground: "#C8C0B2"
+  statusBar.noFolderBackground: "#4DB6AC"
+  statusBar.debuggingBackground: "#E1AC98"
+  titleBar.activeBackground: "#1e2228"
+  titleBar.inactiveBackground: "#1e2228"
+  titleBar.activeForeground: "#C8C0B2"
+  titleBar.inactiveForeground: "#C8C0B2"
+  scrollbarSlider.background: "#7A7D7D"
+  scrollbarSlider.hoverBackground: "#7A7D7D"
+  scrollbarSlider.activeBackground: "#7A7D7D"
+
+themes:
+  - name: "Citrus Copper Citric"
+    colors:
+      <<: *baseColors
+      # Add overrides here if needed
+  - name: "Citrus Copper Oxidized"
+    colors:
+      <<: *baseColors
+      editor.background: "#222831" # Example override
+
+baseTokens:
+  All Text: "#C8C0B2"
+  Comment: "#52616a"
+  Variables: "#C8C0B2"
+  Colors: "#C8C0B2"
+  Invalid: "#C8C0B2"
+  Keyword_Storage: "#B37A6D"
+  Operator_Misc: "#E1AC98"
+  Brackets: "#C8C0B2"
+  String_Symbols_InheritedClass_Heading: "#A3BE8C"
+  Class_Support: "#C8C0B2"
+  Entity_Types: "#B2CCD6"
+  CSS_Class_Support: "#B2CCD6"
+  Sub_methods: "#E1AC98"
+  Language_methods: "#C8C0B2"
+  entity_name_method_js: "#E1AC98"
+  meta_method_js: "#E1AC98"
+  Attributes: "#B87333"
+  HTML_Attributes: "#FFCB6B"
+  CSS_Classes: "#FFCB6B"
+  CSS_IDs: "#82AAFF"
+  Inserted: "#47622B"
+  Deleted: "#E1AC98"
+  Changed: "#B87333"
+  Regular_Expressions: "#89DDFF"
+  Escape_Characters: "#89DDFF"
+  URL: null
+  Decorators: "#82AAFF"
+  ES7_Bind_Operator: "#E1AC98"
+  JSON_Key_Level_0: "#B87333"
+  JSON_Key_Level_1: "#FFCB6B"
+  JSON_Key_Level_2: "#F78C6C"
+  JSON_Key_Level_3: "#E1AC98"
+  JSON_Key_Level_4: "#C17E70"
+  JSON_Key_Level_5: "#82AAFF"
+  JSON_Key_Level_6: "#d1676c"
+  JSON_Key_Level_7: "#B87333"
+  JSON_Key_Level_8: "#C3E88D"
+  Markdown_Plain: "#EEFFFF"
+  Markdown_Markup_Raw_Inline: "#B87333"
+  Markdown_Markup_Raw_Inline_Punctuation: "#65737E"
+  Markdown_Heading: "#C3E88D"
+  Markup_Italic: "#f07178"
+  Markup_Bold: "#f07178"
+  Markup_Bold_Italic: "#f07178"
+  Markup_Underline: "#F78C6C"
+  Markdown_Blockquote: "#65737E"
+  Markup_Quote: null
+  Markdown_Link: "#82AAFF"
+  Markdown_Link_Description: "#B87333"
+  Markdown_Link_Anchor: "#FFCB6B"
+  Markup_Raw_Block: "#B87333"
+  Markdown_Raw_Block_Fenced: "#00000050"
+  Markdown_Fenced_Bode_Block: "#00000050"
+  Markdown_Fenced_Bode_Block_Variable: "#EEFFFF"
+  Markdown_Fenced_Language: "#65737E"
+  Markdown_Separator: "#65737E"
+  Markup_Table: "#EEFFFF"
+  Variable: "#C8C0B2"
+  Dart_this_keyword: "#E1AC98"
+
+# Example language-specific tokens (expand as needed)
+csharpColors:
+  scopes: "#98D1B1"
+  functions: "#E1AC98"
+  classes_types: "#FB8C8C"
+  extension_methods: "#9181A1"
+  constants: "#EEEEEE"
+  namespaces__control_flow: "#E4E9AD"
+  local_variables: "#A1C6C7"
+
+# Add more language sections (python, javascript, etc.) as needed
