@@ -1,5 +1,5 @@
 {
-	"name": "Citrus Copper Citric", //find another anme
+	"name": "Citrus Copper Citric",
 	"colors": {
 		"editor.background": "#1e2228",
 		"editor.foreground": "#C8C0B2",
@@ -19,7 +19,10 @@
 		"titleBar.inactiveForeground": "#C8C0B2",
 		"scrollbarSlider.background": "#7A7D7D",
 		"scrollbarSlider.hoverBackground": "#7A7D7D",
-		"scrollbarSlider.activeBackground": "#7A7D7D"
+		"scrollbarSlider.activeBackground": "#7A7D7D",
+		"_accent.warmGold": "#D4A574",
+		"_accent.deepCopper": "#B8633D",
+		"_accent.burntOrange": "#C85A3A"
 	},
 	"tokenColors": [
 		// #region YAML
@@ -35,40 +38,160 @@
 		// #endregion
 		// #region Python
 		{
-			"name": "Python 'self' keyword",
+			"name": "Python scope keys",
 			"scope": [
-				"variable.language.special.self.python"
+				"keyword.declaration.variable.python",
+				"variable.language.special.self.python",
+				"storage.type.python",
+				"source.python"
 			],
 			"settings": {
-				"foreground": "#4DB6AC"
+				"foreground": "#98D1B1"
 			}
 		},
 		{
-			"name": "Python Numeric Values",
+			"name": "Python function",
 			"scope": [
-				"constant.numeric.python",
-				"constant.numeric.dec.python",
-				"meta.function-call.arguments.python"
-			],
-			"settings": {
-				"foreground": "#4DB6AC"
-			}
-		},
-		{
-			"name": "Python 'magic' method",
-			"scope": [
-				"support.function.magic.python",
-				"meta.function-call.generic.python"
+				"entity.name.function.python",
+				"keyword.declaration.function.python",
+				"source.python"
 			],
 			"settings": {
 				"foreground": "#E1AC98"
 			}
 		},
 		{
-			"name": "Python single quote",
+			"name": "Python class, types",
 			"scope": [
-				"punctuation.definition.string.begin.python",
-				"punctuation.definition.string.end.python"
+				"entity.name.class.python",
+				"entity.name.type.class.python",
+				"keyword.declaration.class.python",
+				"meta.class.python",
+				"source.python"
+			],
+			"settings": {
+				"foreground": "#FB8C8C"
+			}
+		},
+		{
+			"name": "Python Object properties",
+			"scope": [
+				"variable.other.object.property.python",
+				"variable.other.property.python",
+				"meta.attribute.python",
+				"meta.member.access.python",
+				"source.python"
+			],
+			"settings": {
+				"foreground": "#9181A1"
+			}
+		},
+		{
+			"name": "Python function calls",
+			"scope": [
+				"meta.function-call.generic.python",
+				"meta.function-call.python",
+				"source.python"
+			],
+			"settings": {
+				"foreground": "#FB8C8C"
+			}
+		},
+		{
+			"name": "Python numeric constant",
+			"scope": [
+				"constant.numeric.python",
+				"constant.numeric.dec.python",
+				"constant.numeric.integer.python",
+				"constant.numeric.float.python",
+				"source.python"
+			],
+			"settings": {
+				"foreground": "#EEEEEE"
+			}
+		},
+		{
+			"name": "Python import/package",
+			"scope": [
+				"entity.name.package.python",
+				"keyword.control.import.python",
+				"keyword.control.import.from.python",
+				"source.python"
+			],
+			"settings": {
+				"foreground": "#E4E9AD"
+			}
+		},
+		{
+			"name": "Python local variable",
+			"scope": [
+				"entity.name.variable.local.python",
+				"variable.other.local.python",
+				"variable.other.definition.python",
+				"source.python"
+			],
+			"settings": {
+				"foreground": "#A1C6C7"
+			}
+		},
+		{
+			"name": "Python Control Flow Keywords",
+			"scope": [
+				"keyword.control.conditional.python",
+				"keyword.control.flow.python",
+				"keyword.control.loop.python",
+				"source.python"
+			],
+			"settings": {
+				"foreground": "#E4E9AD"
+			}
+		},
+		{
+			"name": "Python Decorators",
+			"scope": [
+				"meta.decorator.python",
+				"entity.name.decorator.python"
+			],
+			"settings": {
+				"foreground": "#C85A3A"
+			}
+		},
+		{
+			"name": "Python Type Hints",
+			"scope": [
+				"meta.type.hint.python",
+				"meta.return.type.annotation.python",
+				"support.type.python"
+			],
+			"settings": {
+				"foreground": "#B2CCD6"
+			}
+		},
+		{
+			"name": "Python Exception Handling",
+			"scope": [
+				"keyword.control.exception.python",
+				"support.type.exception.builtin.python"
+			],
+			"settings": {
+				"foreground": "#E4E9AD"
+			}
+		},
+		{
+			"name": "Python Built-in Functions",
+			"scope": [
+				"support.function.builtin.python",
+				"meta.function-call.builtin.python",
+				"support.function.magic.python"
+			],
+			"settings": {
+				"foreground": "#D4A574"
+			}
+		},
+		{
+			"name": "Python F-String",
+			"scope": [
+				"string.interpolated.python"
 			],
 			"settings": {
 				"foreground": "#A3BE8C"
@@ -276,6 +399,895 @@
 			}
 		},
 		// #endregion
+		// #region JavaScript/TypeScript
+		{
+			"name": "JS/TS scope keys",
+			"scope": [
+				"keyword.declaration.variable.const.js",
+				"keyword.declaration.variable.let.js",
+				"keyword.declaration.variable.var.js",
+				"keyword.declaration.variable.const.ts",
+				"keyword.declaration.variable.let.ts",
+				"keyword.declaration.variable.var.ts",
+				"storage.type.js",
+				"storage.type.ts",
+				"storage.type.tsx",
+				"source.js",
+				"source.ts",
+				"source.tsx"
+			],
+			"settings": {
+				"foreground": "#98D1B1"
+			}
+		},
+		{
+			"name": "JS/TS function",
+			"scope": [
+				"entity.name.function.js",
+				"entity.name.function.ts",
+				"entity.name.function.tsx",
+				"entity.name.method.js",
+				"entity.name.method.ts",
+				"source.js",
+				"source.ts",
+				"source.tsx"
+			],
+			"settings": {
+				"foreground": "#E1AC98"
+			}
+		},
+		{
+			"name": "JS/TS class, types",
+			"scope": [
+				"entity.name.class.js",
+				"entity.name.class.ts",
+				"entity.name.class.tsx",
+				"entity.name.type.ts",
+				"entity.name.type.tsx",
+				"entity.name.type.enum.ts",
+				"entity.name.type.interface.ts",
+				"source.js",
+				"source.ts",
+				"source.tsx"
+			],
+			"settings": {
+				"foreground": "#FB8C8C"
+			}
+		},
+		{
+			"name": "JS/TS Object properties",
+			"scope": [
+				"meta.object-literal.key.js",
+				"meta.object-literal.key.ts",
+				"variable.other.property.js",
+				"variable.other.property.ts",
+				"variable.other.object.property.js",
+				"variable.other.object.property.ts",
+				"source.js",
+				"source.ts",
+				"source.tsx"
+			],
+			"settings": {
+				"foreground": "#9181A1"
+			}
+		},
+		{
+			"name": "JS/TS numeric constant",
+			"scope": [
+				"constant.numeric.js",
+				"constant.numeric.ts",
+				"constant.numeric.tsx",
+				"constant.numeric.integer.js",
+				"constant.numeric.float.js",
+				"source.js",
+				"source.ts",
+				"source.tsx"
+			],
+			"settings": {
+				"foreground": "#EEEEEE"
+			}
+		},
+		{
+			"name": "JS/TS local variable",
+			"scope": [
+				"entity.name.variable.local.js",
+				"entity.name.variable.local.ts",
+				"variable.other.definition.js",
+				"variable.other.definition.ts",
+				"variable.other.local.js",
+				"variable.other.local.ts",
+				"source.js",
+				"source.ts",
+				"source.tsx"
+			],
+			"settings": {
+				"foreground": "#A1C6C7"
+			}
+		},
+		{
+			"name": "JS/TS Control Flow Keywords",
+			"scope": [
+				"keyword.control.conditional.if.js",
+				"keyword.control.conditional.if.ts",
+				"keyword.control.flow.return.js",
+				"keyword.control.flow.return.ts",
+				"keyword.control.flow.break.js",
+				"keyword.control.flow.continue.js",
+				"source.js",
+				"source.ts",
+				"source.tsx"
+			],
+			"settings": {
+				"foreground": "#E4E9AD"
+			}
+		},
+		{
+			"name": "JS/TS Type Annotation",
+			"scope": [
+				"meta.type.annotation.ts",
+				"meta.return.type.ts",
+				"storage.type.ts",
+				"storage.type.tsx"
+			],
+			"settings": {
+				"foreground": "#B2CCD6"
+			}
+		},
+		{
+			"name": "JS/TS Built-in Methods and Functions",
+			"scope": [
+				"support.function.builtin.js",
+				"support.function.builtin.ts",
+				"meta.function-call.method.builtin.js",
+				"meta.object.method.ts"
+			],
+			"settings": {
+				"foreground": "#D4A574"
+			}
+		},
+		{
+			"name": "JS/TS Decorators",
+			"scope": [
+				"meta.decorator.ts",
+				"meta.decorator.tsx",
+				"entity.name.decorator.ts"
+			],
+			"settings": {
+				"foreground": "#C85A3A"
+			}
+		},
+		{
+			"name": "JS/TS Async/Await",
+			"scope": [
+				"keyword.control.async.ts",
+				"keyword.control.async.js",
+				"keyword.control.await.ts",
+				"keyword.control.await.js"
+			],
+			"settings": {
+				"foreground": "#E4E9AD"
+			}
+		},
+		{
+			"name": "JS/TS Template Literals",
+			"scope": [
+				"string.template.js",
+				"string.template.ts",
+				"string.template.tsx"
+			],
+			"settings": {
+				"foreground": "#A3BE8C"
+			}
+		},
+		{
+			"name": "JS/TS Arrow Function",
+			"scope": [
+				"storage.type.function.arrow.js",
+				"storage.type.function.arrow.ts"
+			],
+			"settings": {
+				"foreground": "#E1AC98"
+			}
+		},
+		// #endregion
+		// #region Java
+		{
+			"name": "Java scope keys",
+			"scope": [
+				"storage.modifier.private.java",
+				"storage.modifier.public.java",
+				"variable.language.this.java",
+				"storage.modifier.static.java",
+				"storage.modifier.protected.java",
+				"storage.modifier.final.java",
+				"storage.modifier.abstract.java",
+				"storage.modifier.synchronized.java",
+				"storage.modifier.volatile.java",
+				"storage.modifier.transient.java",
+				"storage.modifier.strictfp.java",
+				"storage.type.java",
+				"source.java"
+			],
+			"settings": {
+				"foreground": "#98D1B1"
+			}
+		},
+		{
+			"name": "Java function",
+			"scope": [
+				"entity.name.function.java",
+				"entity.name.method.java",
+				"source.java"
+			],
+			"settings": {
+				"foreground": "#E1AC98"
+			}
+		},
+		{
+			"name": "Java class, types",
+			"scope": [
+				"entity.name.type.java",
+				"entity.name.type.class.java",
+				"entity.name.type.interface.java",
+				"entity.name.type.enum.java",
+				"source.java"
+			],
+			"settings": {
+				"foreground": "#FB8C8C"
+			}
+		},
+		{
+			"name": "Java Object class",
+			"scope": [
+				"variable.other.object.property.java",
+				"meta.definition.variable.java",
+				"source.java"
+			],
+			"settings": {
+				"foreground": "#9181A1"
+			}
+		},
+		{
+			"name": "Java numeric constant",
+			"scope": [
+				"constant.numeric.java",
+				"constant.numeric.integer.java",
+				"constant.numeric.float.java",
+				"source.java"
+			],
+			"settings": {
+				"foreground": "#EEEEEE"
+			}
+		},
+		{
+			"name": "Java namespace",
+			"scope": [
+				"entity.name.package.java",
+				"source.java"
+			],
+			"settings": {
+				"foreground": "#E4E9AD"
+			}
+		},
+		{
+			"name": "Java local variable",
+			"scope": [
+				"entity.name.variable.local.java",
+				"variable.other.definition.java",
+				"source.java"
+			],
+			"settings": {
+				"foreground": "#A1C6C7"
+			}
+		},
+		{
+			"name": "Java Control Flow Keywords",
+			"scope": [
+				"keyword.control.conditional.if.java",
+				"keyword.control.flow.return.java",
+				"keyword.control.loop.java",
+				"source.java"
+			],
+			"settings": {
+				"foreground": "#E4E9AD"
+			}
+		},
+		{
+			"name": "Java Annotations",
+			"scope": [
+				"meta.annotation.java",
+				"storage.type.annotation.java"
+			],
+			"settings": {
+				"foreground": "#C85A3A"
+			}
+		},
+		{
+			"name": "Java Built-in Types",
+			"scope": [
+				"support.type.primitive.java",
+				"support.type.java"
+			],
+			"settings": {
+				"foreground": "#B2CCD6"
+			}
+		},
+		{
+			"name": "Java Generics",
+			"scope": [
+				"meta.generic.java"
+			],
+			"settings": {
+				"foreground": "#B2CCD6"
+			}
+		},
+		{
+			"name": "Java Exception Handling",
+			"scope": [
+				"keyword.control.try.java",
+				"keyword.control.catch.java",
+				"keyword.control.finally.java",
+				"keyword.control.throw.java"
+			],
+			"settings": {
+				"foreground": "#E4E9AD"
+			}
+		},
+		{
+			"name": "Java Built-in Methods",
+			"scope": [
+				"support.function.builtin.java",
+				"meta.function-call.builtin.java"
+			],
+			"settings": {
+				"foreground": "#D4A574"
+			}
+		},
+		// #endregion
+		// #region Go
+		{
+			"name": "Go Keywords",
+			"scope": [
+				"keyword.control.go",
+				"keyword.declaration.go"
+			],
+			"settings": {
+				"foreground": "#E4E9AD"
+			}
+		},
+		{
+			"name": "Go Function Declaration",
+			"scope": [
+				"keyword.function.go",
+				"entity.name.function.go"
+			],
+			"settings": {
+				"foreground": "#E1AC98"
+			}
+		},
+		{
+			"name": "Go Type Declaration",
+			"scope": [
+				"keyword.type.go",
+				"entity.name.type.go"
+			],
+			"settings": {
+				"foreground": "#FB8C8C"
+			}
+		},
+		{
+			"name": "Go Struct and Interface",
+			"scope": [
+				"keyword.struct.go",
+				"keyword.interface.go",
+				"storage.type.struct.go",
+				"storage.type.interface.go"
+			],
+			"settings": {
+				"foreground": "#FB8C8C"
+			}
+		},
+		{
+			"name": "Go Built-in Functions",
+			"scope": [
+				"support.function.builtin.go",
+				"meta.function-call.builtin.go"
+			],
+			"settings": {
+				"foreground": "#D4A574"
+			}
+		},
+		{
+			"name": "Go Receiver Declaration",
+			"scope": [
+				"variable.language.receiver.go"
+			],
+			"settings": {
+				"foreground": "#A1C6C7"
+			}
+		},
+		{
+			"name": "Go Package Declaration",
+			"scope": [
+				"keyword.package.go",
+				"entity.name.package.go"
+			],
+			"settings": {
+				"foreground": "#E4E9AD"
+			}
+		},
+		{
+			"name": "Go Import Declaration",
+			"scope": [
+				"keyword.import.go"
+			],
+			"settings": {
+				"foreground": "#E4E9AD"
+			}
+		},
+		{
+			"name": "Go Goroutine",
+			"scope": [
+				"keyword.go.go",
+				"keyword.defer.go"
+			],
+			"settings": {
+				"foreground": "#E4E9AD"
+			}
+		},
+		{
+			"name": "Go Error Handling",
+			"scope": [
+				"support.function.error.go"
+			],
+			"settings": {
+				"foreground": "#D4A574"
+			}
+		},
+		// #endregion
+		// #region C/C++
+		{
+			"name": "C/C++ Keywords",
+			"scope": [
+				"keyword.control.c",
+				"keyword.control.cpp",
+				"keyword.declaration.c",
+				"keyword.declaration.cpp"
+			],
+			"settings": {
+				"foreground": "#E4E9AD"
+			}
+		},
+		{
+			"name": "C/C++ Type Declaration",
+			"scope": [
+				"keyword.type.class.cpp",
+				"keyword.type.struct.c",
+				"keyword.type.struct.cpp",
+				"keyword.type.union.c",
+				"keyword.type.union.cpp",
+				"entity.name.type.c",
+				"entity.name.type.cpp"
+			],
+			"settings": {
+				"foreground": "#FB8C8C"
+			}
+		},
+		{
+			"name": "C/C++ Preprocessor",
+			"scope": [
+				"meta.preprocessor.c",
+				"meta.preprocessor.cpp"
+			],
+			"settings": {
+				"foreground": "#C85A3A"
+			}
+		},
+		{
+			"name": "C/C++ Namespace",
+			"scope": [
+				"entity.name.namespace.cpp"
+			],
+			"settings": {
+				"foreground": "#E4E9AD"
+			}
+		},
+		{
+			"name": "C/C++ Function Declaration",
+			"scope": [
+				"entity.name.function.c",
+				"entity.name.function.cpp"
+			],
+			"settings": {
+				"foreground": "#E1AC98"
+			}
+		},
+		{
+			"name": "C/C++ Storage Classes",
+			"scope": [
+				"storage.class.c",
+				"storage.class.cpp",
+				"storage.modifier.pointer.c",
+				"storage.modifier.pointer.cpp"
+			],
+			"settings": {
+				"foreground": "#98D1B1"
+			}
+		},
+		{
+			"name": "C/C++ Built-in Types",
+			"scope": [
+				"support.type.primitive.c",
+				"support.type.primitive.cpp",
+				"support.type.builtin.c",
+				"support.type.builtin.cpp"
+			],
+			"settings": {
+				"foreground": "#B2CCD6"
+			}
+		},
+		{
+			"name": "C/C++ Template",
+			"scope": [
+				"meta.template.c",
+				"meta.template.cpp"
+			],
+			"settings": {
+				"foreground": "#B2CCD6"
+			}
+		},
+		{
+			"name": "C/C++ Built-in Functions",
+			"scope": [
+				"support.function.builtin.c",
+				"support.function.builtin.cpp"
+			],
+			"settings": {
+				"foreground": "#D4A574"
+			}
+		},
+		{
+			"name": "C/C++ Constants",
+			"scope": [
+				"constant.language.c",
+				"constant.language.cpp"
+			],
+			"settings": {
+				"foreground": "#B8633D"
+			}
+		},
+		{
+			"name": "C/C++ Pointer Operators",
+			"scope": [
+				"keyword.operator.dereference.c",
+				"keyword.operator.dereference.cpp",
+				"storage.modifier.reference.cpp"
+			],
+			"settings": {
+				"foreground": "#98D1B1"
+			}
+		},
+		{
+			"name": "C/C++ Volatile and Restrict",
+			"scope": [
+				"storage.modifier.volatile.c",
+				"storage.modifier.volatile.cpp",
+				"storage.modifier.restrict.c",
+				"storage.modifier.restrict.cpp"
+			],
+			"settings": {
+				"foreground": "#98D1B1"
+			}
+		},
+		{
+			"name": "C/C++ Union and Enum",
+			"scope": [
+				"keyword.struct.union.c",
+				"keyword.struct.union.cpp",
+				"keyword.struct.enum.c",
+				"keyword.struct.enum.cpp",
+				"storage.type.union.c",
+				"storage.type.union.cpp"
+			],
+			"settings": {
+				"foreground": "#FB8C8C"
+			}
+		},
+		{
+			"name": "C/C++ Labels and Goto",
+			"scope": [
+				"keyword.control.goto.c",
+				"keyword.control.goto.cpp",
+				"entity.name.label.c",
+				"entity.name.label.cpp"
+			],
+			"settings": {
+				"foreground": "#E4E9AD"
+			}
+		},
+		// #endregion
+		// #region Objective-C
+		{
+			"name": "Objective-C Interface and Protocol",
+			"scope": [
+				"keyword.control.interface.objc",
+				"keyword.control.implementation.objc",
+				"keyword.control.protocol.objc",
+				"entity.name.class.objc"
+			],
+			"settings": {
+				"foreground": "#FB8C8C"
+			}
+		},
+		{
+			"name": "Objective-C Property Decorator",
+			"scope": [
+				"keyword.property.objc",
+				"storage.modifier.property.objc"
+			],
+			"settings": {
+				"foreground": "#D4A574"
+			}
+		},
+		{
+			"name": "Objective-C IBOutlet and IBAction",
+			"scope": [
+				"storage.type.IBOutlet.objc",
+				"storage.type.IBAction.objc"
+			],
+			"settings": {
+				"foreground": "#D4A574"
+			}
+		},
+		{
+			"name": "Objective-C Message Methods",
+			"scope": [
+				"entity.name.method.objc"
+			],
+			"settings": {
+				"foreground": "#E1AC98"
+			}
+		},
+		{
+			"name": "Objective-C Selector",
+			"scope": [
+				"meta.selector.objc",
+				"variable.other.selector.objc"
+			],
+			"settings": {
+				"foreground": "#A3BE8C"
+			}
+		},
+		{
+			"name": "Objective-C Synthesize and Dynamic",
+			"scope": [
+				"keyword.synthesize.objc",
+				"keyword.dynamic.objc"
+			],
+			"settings": {
+				"foreground": "#E4E9AD"
+			}
+		},
+		{
+			"name": "Objective-C Exception Handling",
+			"scope": [
+				"keyword.control.try.objc",
+				"keyword.control.catch.objc",
+				"keyword.control.finally.objc",
+				"keyword.control.autoreleasepool.objc"
+			],
+			"settings": {
+				"foreground": "#C85A3A"
+			}
+		},
+		{
+			"name": "Objective-C nil Keyword",
+			"scope": [
+				"constant.language.nil.objc"
+			],
+			"settings": {
+				"foreground": "#4DB6AC"
+			}
+		},
+		{
+			"name": "Objective-C Keywords",
+			"scope": [
+				"keyword.control.objc"
+			],
+			"settings": {
+				"foreground": "#E4E9AD"
+			}
+		},
+		{
+			"name": "Objective-C Type and Method",
+			"scope": [
+				"storage.type.objc",
+				"support.type.objc"
+			],
+			"settings": {
+				"foreground": "#B2CCD6"
+			}
+		},
+		// #endregion
+		// #region Objective-C++
+		{
+			"name": "Objective-C++ Keywords",
+			"scope": [
+				"keyword.control.objcpp"
+			],
+			"settings": {
+				"foreground": "#E4E9AD"
+			}
+		},
+		{
+			"name": "Objective-C++ Interface",
+			"scope": [
+				"entity.name.class.objcpp"
+			],
+			"settings": {
+				"foreground": "#FB8C8C"
+			}
+		},
+		{
+			"name": "Objective-C++ Methods",
+			"scope": [
+				"entity.name.method.objcpp"
+			],
+			"settings": {
+				"foreground": "#E1AC98"
+			}
+		},
+		{
+			"name": "Objective-C++ C++ Template",
+			"scope": [
+				"meta.template.cpp.objcpp"
+			],
+			"settings": {
+				"foreground": "#B2CCD6"
+			}
+		},
+		{
+			"name": "Objective-C++ Namespace",
+			"scope": [
+				"entity.name.namespace.objcpp"
+			],
+			"settings": {
+				"foreground": "#E4E9AD"
+			}
+		},
+		{
+			"name": "Objective-C++ Built-in Functions",
+			"scope": [
+				"support.function.builtin.objcpp",
+				"support.function.builtin.cpp.objcpp"
+			],
+			"settings": {
+				"foreground": "#D4A574"
+			}
+		},
+		// #endregion
+		// #region Kotlin
+		{
+			"name": "Kotlin Keywords",
+			"scope": [
+				"keyword.control.kotlin",
+				"keyword.declaration.kotlin"
+			],
+			"settings": {
+				"foreground": "#E4E9AD"
+			}
+		},
+		{
+			"name": "Kotlin Function Declaration",
+			"scope": [
+				"keyword.declaration.function.kotlin",
+				"entity.name.function.kotlin"
+			],
+			"settings": {
+				"foreground": "#E1AC98"
+			}
+		},
+		{
+			"name": "Kotlin Class Declaration",
+			"scope": [
+				"keyword.declaration.class.kotlin",
+				"entity.name.class.kotlin"
+			],
+			"settings": {
+				"foreground": "#FB8C8C"
+			}
+		},
+		{
+			"name": "Kotlin Lambda Expression",
+			"scope": [
+				"meta.lambda.kotlin",
+				"keyword.operator.lambda.kotlin"
+			],
+			"settings": {
+				"foreground": "#D4A574"
+			}
+		},
+		{
+			"name": "Kotlin Extension Functions",
+			"scope": [
+				"meta.extension.kotlin",
+				"support.function.extension.kotlin"
+			],
+			"settings": {
+				"foreground": "#D4A574"
+			}
+		},
+		{
+			"name": "Kotlin Val and Var",
+			"scope": [
+				"keyword.declaration.val.kotlin",
+				"keyword.declaration.var.kotlin"
+			],
+			"settings": {
+				"foreground": "#98D1B1"
+			}
+		},
+		{
+			"name": "Kotlin Null Safety Operators",
+			"scope": [
+				"keyword.operator.nullsafety.kotlin",
+				"keyword.operator.elvis.kotlin"
+			],
+			"settings": {
+				"foreground": "#4DB6AC"
+			}
+		},
+		{
+			"name": "Kotlin When Expression",
+			"scope": [
+				"keyword.control.when.kotlin"
+			],
+			"settings": {
+				"foreground": "#E4E9AD"
+			}
+		},
+		{
+			"name": "Kotlin Coroutine Keywords",
+			"scope": [
+				"keyword.control.suspend.kotlin",
+				"keyword.control.launch.kotlin",
+				"keyword.control.async.kotlin"
+			],
+			"settings": {
+				"foreground": "#E4E9AD"
+			}
+		},
+		{
+			"name": "Kotlin Annotations",
+			"scope": [
+				"meta.annotation.kotlin",
+				"storage.type.annotation.kotlin"
+			],
+			"settings": {
+				"foreground": "#C85A3A"
+			}
+		},
+		{
+			"name": "Kotlin Built-in Types",
+			"scope": [
+				"support.type.kotlin",
+				"support.type.primitive.kotlin"
+			],
+			"settings": {
+				"foreground": "#B2CCD6"
+			}
+		},
+		{
+			"name": "Kotlin Companion Object",
+			"scope": [
+				"keyword.companion.kotlin",
+				"keyword.object.kotlin"
+			],
+			"settings": {
+				"foreground": "#FB8C8C"
+			}
+		},
+		// #endregion
 		// #region General
 		{
 			"name": "All Text",
@@ -394,13 +1406,153 @@
 		// #endregion
 		// #region Dart
 		{
-			"name": "Dart 'this' keyword",
+			"name": "Dart scope keys",
 			"scope": [
-				"variable.language.dart",
-				"source.dart.this"
+				"storage.modifier.private.dart",
+				"storage.modifier.public.dart",
+				"variable.language.this.dart",
+				"storage.modifier.dart",
+				"storage.modifier.static.dart",
+				"storage.modifier.final.dart",
+				"storage.modifier.const.dart",
+				"storage.modifier.abstract.dart",
+				"keyword.declaration.variable.var.dart",
+				"keyword.declaration.variable.final.dart",
+				"storage.type.dart",
+				"source.dart"
 			],
 			"settings": {
-				"foreground": "#4DB6AC"
+				"foreground": "#98D1B1"
+			}
+		},
+		{
+			"name": "Dart function",
+			"scope": [
+				"entity.name.function.dart",
+				"entity.name.method.dart",
+				"source.dart"
+			],
+			"settings": {
+				"foreground": "#E1AC98"
+			}
+		},
+		{
+			"name": "Dart class, types",
+			"scope": [
+				"support.class.dart",
+				"source.dart"
+			],
+			"settings": {
+				"foreground": "#FB8C8C"
+			}
+		},
+		{
+			"name": "Dart Object properties",
+			"scope": [
+				"variable.other.object.property.dart",
+				"variable.other.property.dart",
+				"source.dart"
+			],
+			"settings": {
+				"foreground": "#9181A1"
+			}
+		},
+		{
+			"name": "Dart numeric constant",
+			"scope": [
+				"constant.numeric.dart",
+				"constant.numeric.integer.dart",
+				"constant.numeric.float.dart",
+				"source.dart"
+			],
+			"settings": {
+				"foreground": "#EEEEEE"
+			}
+		},
+		{
+			"name": "Dart package/library",
+			"scope": [
+				"entity.name.package.dart",
+				"source.dart"
+			],
+			"settings": {
+				"foreground": "#E4E9AD"
+			}
+		},
+		{
+			"name": "Dart local variable",
+			"scope": [
+				"entity.name.variable.local.dart",
+				"variable.other.local.dart",
+				"variable.other.definition.dart",
+				"source.dart"
+			],
+			"settings": {
+				"foreground": "#A1C6C7"
+			}
+		},
+		{
+			"name": "Dart Control Flow Keywords",
+			"scope": [
+				"keyword.control.conditional.if.dart",
+				"keyword.control.flow.return.dart",
+				"keyword.control.loop.dart",
+				"source.dart"
+			],
+			"settings": {
+				"foreground": "#E4E9AD"
+			}
+		},
+		{
+			"name": "Dart Annotations",
+			"scope": [
+				"meta.annotation.dart",
+				"storage.type.annotation.dart"
+			],
+			"settings": {
+				"foreground": "#C85A3A"
+			}
+		},
+		{
+			"name": "Dart Built-in Types",
+			"scope": [
+				"support.type.primitive.dart",
+				"support.type.dart"
+			],
+			"settings": {
+				"foreground": "#B2CCD6"
+			}
+		},
+		{
+			"name": "Dart Exception Handling",
+			"scope": [
+				"keyword.control.try.dart",
+				"keyword.control.catch.dart",
+				"keyword.control.finally.dart",
+				"keyword.control.throw.dart"
+			],
+			"settings": {
+				"foreground": "#E4E9AD"
+			}
+		},
+		{
+			"name": "Dart Built-in Methods",
+			"scope": [
+				"support.function.builtin.dart",
+				"meta.function-call.builtin.dart"
+			],
+			"settings": {
+				"foreground": "#D4A574"
+			}
+		},
+		{
+			"name": "Dart Async/Await",
+			"scope": [
+				"keyword.control.async.dart",
+				"keyword.control.await.dart"
+			],
+			"settings": {
+				"foreground": "#E4E9AD"
 			}
 		},
 		// #endregion
@@ -908,20 +2060,10 @@
 		{
 			"name": "Variable",
 			"scope": [
-				"entity.name.variable",
+				"entity.name.variable"
 			],
 			"settings": {
 				"foreground": "#C8C0B2"
-			}
-		},
-		{
-			"name": "Dart 'this' keyword",
-			"scope": [
-				"variable.language.dart",
-				"source.dart.this",
-			],
-			"settings": {
-				"foreground": "#E1AC98"
 			}
 		},
 		{
